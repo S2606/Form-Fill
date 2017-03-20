@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Name"
+        android:id="@+id/name"
+        android:width="100dp"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:id="@+id/spinner">
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Details:-"
+        android:id="@+id/textView3"
+        android:layout_marginTop="84dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/details"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/delbutton"
+        android:layout_marginBottom="33dp"
+        android:onClick="deletebuttonClicked"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/details"
+        android:backgroundTint="#F9A825"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:id="@+id/backbutton"
+        android:layout_alignTop="@+id/delbutton"
+        android:layout_alignParentEnd="true"
+        android:onClick="backbuttonClicked"
+        android:backgroundTint="#F9A825"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to MyApp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add "
+        android:id="@+id/addingbutton"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:onClick="addingButtonClicked"
+        android:backgroundTint="#F9A825"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/deletingbutton"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/addingbutton"
+        android:onClick="deletingbuttonClicked"
+        android:backgroundTint="#F9A825"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="display"
+        android:id="@+id/displaybutton"
+        android:layout_marginTop="62dp"
+        android:onClick="displaybuttonClicked"
+        android:layout_below="@+id/deletingbutton"
+        android:layout_alignStart="@+id/deletingbutton"
+        android:backgroundTint="#F9A825"/>
+</RelativeLayout>
